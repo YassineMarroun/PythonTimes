@@ -33,3 +33,27 @@ name, day, month, year = myTuple2
 print(myTuple2)
 print(name)
 print(year)
+
+# dictionaries
+myDictionary = {"Germany": "Berlin", "France": "Paris", "United Kingdom": "London", "Spain": "Madrid",
+                "Italy": "Lisbon"}
+print(myDictionary)
+
+myDictionary["Italy"] = "Rome"
+print(myDictionary)
+
+del myDictionary["United Kingdom"]
+print(myDictionary)
+
+myTuple3 = ["Spain", "France", "United Kingdom", "Germany"]
+myDictionary2 = {myTuple3[0]: "Madrid", myTuple3[1]: "Paris", myTuple3[2]: "London", myTuple3[3]: "Berlin"}
+print(myDictionary2)
+
+myDictionary3 = {23: "Jordan", "Name": "Michael", "Team": "Chicago",
+                 "Rings": {"seasons": [1991, 1992, 1993, 1996, 1997, 1998]}}
+print(myDictionary3)
+print(myDictionary3["Rings"])
+
+print(myDictionary3.keys())
+print(myDictionary3.values())
+print(len(myDictionary3))
