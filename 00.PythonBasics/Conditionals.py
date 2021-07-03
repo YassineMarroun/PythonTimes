@@ -52,3 +52,30 @@ if administrative_salary < area_manager_salary < director_salary < president_sal
     print("Everything works correctly")
 else:
     print("Something is wrong with the accounts of the company")
+
+
+print("Scholarship Program 2020")
+school_distance = int(input("Enter the distance to the school in km: "))
+print(school_distance)
+
+numberOf_brothers = int(input("Enter the number of siblings in the center: "))
+print(numberOf_brothers)
+
+family_salary = int(input("Enter the gross annual salary: "))
+print(family_salary)
+
+if school_distance > 40 and numberOf_brothers > 2 or family_salary <= 20000:
+    print("You are entitled to a scholarship")
+else:
+    print("You do not have the right to a scholarship")
+
+
+print("Optative subjects for 2020")
+print("Optative subjects: Computer Graphics - Software Testing- Usability and Accessibility")
+option = input("Enter the chosen subject: ")
+subject = option.lower()
+
+if subject in ("computer graphics", "software testing", "usability and accessibility"):
+    print("Chosen subject " + subject)
+else:
+    print("The subject chosen not provided")
