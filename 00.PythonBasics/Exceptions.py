@@ -1,4 +1,6 @@
-"""
+import math
+
+
 def addition(num1, num2):
     return num1 + num2
 
@@ -61,7 +63,6 @@ def divide():
 divide()
 
 
-
 # Using raise
 def evaluate_age(age):
     if age < 0:
@@ -78,8 +79,6 @@ def evaluate_age(age):
 
 
 print(evaluate_age(-15))
-"""
-import math
 
 
 def calculate_square_root(num1):
