@@ -74,3 +74,33 @@ while number < 0:
 if attempts < 2:
     solution = math.sqrt(number)
     print("The square root of " + str(number) + " is " + str(solution))
+
+
+# Using continue, pass and else
+for letter in "Python":
+    if letter == "h":
+        continue
+    print("Seeing the letter: " + letter)
+
+
+name = "Another sentence"
+counter = 1
+
+for i in name:
+    if i == " ":
+        continue
+    counter += 1
+
+print(counter)
+
+
+email = input("Enter your email address: ")
+
+for i in email:
+    if i == "@":
+        at = True
+        break
+else:
+    at = False
+
+print(at)
