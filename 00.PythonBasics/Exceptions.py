@@ -18,8 +18,14 @@ def division(num1, num2):
         return "Wrong operation."
 
 
-op1 = (int(input("Enter the first number: ")))
-op2 = (int(input("Enter the second number: ")))
+while True:
+    try:
+        op1 = (int(input("Enter the first number: ")))
+        op2 = (int(input("Enter the second number: ")))
+        break
+    except ValueError:
+        print("The entered values are not correct, try again: ")
+
 operation = input("Enter the operation to be performed (sum, subtract, multiply, divide): ")
 
 if operation == "sum":
@@ -34,3 +40,21 @@ else:
     print("Operation not covered.")
 
 print("Operation executed. Continuation of execution of the program.")
+
+
+def divide():
+    try:
+        op3 = (float(input("Enter the first number: ")))
+        op4 = (float(input("Enter the second number: ")))
+        print("The division is: " + str(op3 / op4))
+
+    except ValueError:
+        print("The entered value is not correct.")
+    except ZeroDivisionError:
+        print("You can not divide by 0.")
+
+    finally:
+        print("Calculation completed.")
+
+
+divide()
