@@ -27,3 +27,15 @@ print("Here is more code")
 print(next(returnPairs))
 print("Here is more code")
 print(next(returnPairs))
+
+
+def return_cities(*cities):
+    for element in cities:
+        # for subElement in element:
+        yield from element
+
+
+returned_cities = return_cities("Madrid", "Barcelona", "Bilbao", "Valencia")
+
+print(next(returned_cities))
+print(next(returned_cities))
