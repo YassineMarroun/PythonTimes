@@ -24,5 +24,17 @@ else:
     print("Email is incorrect")
 
 
-for c in range(5):
-    print(c)
+for c in range(5, 50, 3):
+    print(f"Variable value {c}")
+
+
+valid = False
+myEmail = input("Enter your email address: ")
+
+for i in range(len(myEmail)):
+    if myEmail[i] == "@":
+        valid = True
+if valid:
+    print("Email is correct")
+else:
+    print("Email is incorrect")
