@@ -22,3 +22,7 @@ if counter == 2:
     print("Email is correct")
 else:
     print("Email is incorrect")
+
+
+for c in range(5):
+    print(c)
