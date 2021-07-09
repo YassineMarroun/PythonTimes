@@ -43,6 +43,7 @@ class Motorcycle(Vehicles):
 
 class ElectricVehicles:
     def __init__(self):
+        super()
         self.autonomy = 100
 
     def charge_energy(self):
