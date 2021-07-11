@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8619d1a3-4c3b-4e88-ae94-d4e67bb4a1dd" name="Default Changelist" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/StringMethods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01.Modules/MathFunctions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PolymorphismExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/PolymorphismExample.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/StringMethods.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -53,6 +52,11 @@
         <option name="myModuleName" value="00.PythonBasics" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yasma2\OneDrive - InfoCare\Programming\PythonTimes\01.Modules" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="StringMethods.py" type="PythonConfigurationType" factoryName="Python">
@@ -248,7 +252,13 @@
       <option name="presentableId" value="LOCAL−00027" />
       <updated>1626010947754</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL−00028" summary="Commit">
+      <created>1626023424774</created>
+      <option name="number" value="LOCAL−00028" />
+      <option name="presentableId" value="LOCAL−00028" />
+      <updated>1626023424774</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
