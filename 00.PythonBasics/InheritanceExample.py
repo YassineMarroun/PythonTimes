@@ -41,9 +41,9 @@ class Motorcycle(Vehicles):
               "\nAccelerating:", self.accelerate, "\nBraking:", self.brake, "\n", self.doing_wheelie)
 
 
-class ElectricVehicles:
-    def __init__(self):
-        super()
+class ElectricVehicles(Vehicles):
+    def __init__(self, brand, model):
+        super().__init__(brand, model)
         self.autonomy = 100
 
     def charge_energy(self):
@@ -65,4 +65,4 @@ class ElectricBicycle(ElectricVehicles, Vehicles):
     pass
 
 
-myBicycle = ElectricBicycle()
+myBicycle = ElectricBicycle("Orbea", "THJ")
