@@ -1,0 +1,9 @@
+setup.py
+CalculationPackage.egg-info/PKG-INFO
+CalculationPackage.egg-info/SOURCES.txt
+CalculationPackage.egg-info/dependency_links.txt
+CalculationPackage.egg-info/top_level.txt
+Calculations/GeneralCalculations.py
+Calculations/__init__.py
+Calculations/RoundingPotency/Rounding_Potency.py
+Calculations/RoundingPotency/__init__.py
