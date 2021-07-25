@@ -13,15 +13,20 @@ class Person:
 
 
 class PeopleList:
-
     people = []
 
     def __init__(self):
         list_of_people = open("externalFile", "ab+")
         list_of_people.seek(0)
 
-        self.people = pickle.load(list_of_people)
-        print("")
+        try:
+            self.people = pickle.load(list_of_people)
+            print("{} people were uploaded from the external file".format(len(self.people)))
+        except:
+            print("The file is empty")
+        finally:
+            list_of_people.close()
+            del list_of_people
 
     def add_people(self, person):
         self.people.append(person)
@@ -32,9 +37,11 @@ class PeopleList:
 
 
 myList = PeopleList()
+"""
 p = Person("Anna", "Female", 29)
 myList.add_people(p)
 p = Person("Tonny", "Male", 39)
 myList.add_people(p)
 p = Person("Rachael", "Female", 19)
 myList.add_people(p)
+"""
