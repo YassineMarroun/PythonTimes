@@ -2,9 +2,8 @@
 
 numList = [5, 2, 8, 3, 9]
 
-"""double for loop"""
 
-
+# double for loop
 def insertion_sort_for(A):
     for i in range(1, len(A)):
         for j in range(i - 1, 0, -1):
@@ -14,9 +13,7 @@ def insertion_sort_for(A):
                 break
 
 
-"""while loop"""
-
-
+# while loop
 def insertion_sort_while(A):
     for i in range(1, len(A)):
         j = i - 1
@@ -25,15 +22,13 @@ def insertion_sort_while(A):
             j -= 1
 
 
-"""optimized method"""
-
-
+# optimized method
 def insertion_sort_optimized(A):
     for i in range(1, len(A)):
         cur_num = A[i]
-        for j in range(i-1, 0, -1):
+        for j in range(i - 1, 0, -1):
             if A[j] > cur_num:
-                A[j+1] = A[j]
+                A[j + 1] = A[j]
             else:
-                A[j+1] = cur_num
+                A[j + 1] = cur_num
                 break
