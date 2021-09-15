@@ -5,15 +5,21 @@ Given a string, function to determine if it is a palindrome.
 # racecar
 # madam
 # Dammit I'm mad.
-import string
 
 
 def is_palindrome(s):
-    s = s.lower()
-    # s = s.translate(None, string.punctuation)
-    s = s.replace(" ", "")
-
-    return s == s[::-1]
+    i = 0
+    j = len(s) - 1
+    while i < j:
+        while not s[i].isalnum() and i < j:
+            i += 1
+        while not s[j].isalnum() and i < j:
+            j -= 1
+        if s[i].lower() != s[j].lower():
+            return False
+        i += 1
+        j -= 1
+        return True
 
 
 str_1 = "racecar"
