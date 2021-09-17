@@ -9,6 +9,8 @@ pal_perm = "Tact Coa"  # Taco Cat
 not_pal_perm = "This is not a palindrome permutation"
 
 
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 def is_pal_perm(input_str):
     input_str = input_str.replace(" ", "")
     input_str = input_str.lower()
