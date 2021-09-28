@@ -5,6 +5,9 @@ root = Tk()
 myFrame = Frame(root)
 myFrame.pack()
 
+operation = ""
+result = 0
+
 
 # ----------- Screen -----------
 
@@ -15,10 +18,37 @@ screen.grid(row=1, column=1, padx=10, pady=10, columnspan=4)
 screen.config(background="black", fg="#03f943", justify="right")
 
 
-# ----------- Keystrokes -----------
+# ---------- Keystrokes ----------
 
 def numberPressed(num):
-    numberScreen.set(numberScreen.get() + num)
+    global operation
+    
+    if operation != "":
+        numberScreen.set(num)
+        operation = ""
+    else:
+        numberScreen.set(numberScreen.get() + num)
+
+
+# ---------- Function Sum ----------
+
+def sum(num):
+    global operation
+    global result
+
+    result += int(num)
+    operation = "sum"
+
+    numberScreen.set(result)
+
+
+# ---------- Function the_result ----------
+
+def the_result():
+    global result
+    
+    numberScreen.set(result + int(numberScreen.get()))
+    result = 0
 
 
 # ----------- Row 1 -----------
@@ -63,9 +93,9 @@ button0 = Button(myFrame, text="0", width=3, command=lambda:numberPressed("0"))
 button0.grid(row=5, column=1)
 buttonComma = Button(myFrame, text=",", width=3, command=lambda:numberPressed(","))
 buttonComma.grid(row=5, column=2)
-buttonEqual = Button(myFrame, text="=", width=3)
+buttonEqual = Button(myFrame, text="=", width=3, command=lambda:the_result())
 buttonEqual.grid(row=5, column=3)
-buttonSum = Button(myFrame, text="+", width=3)
+buttonSum = Button(myFrame, text="+", width=3, command=lambda:sum(numberScreen.get()))
 buttonSum.grid(row=5, column=4)
 
 
